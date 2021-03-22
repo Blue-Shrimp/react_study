@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;public, src, package.json, package-lock.json, READFIRST.md, README.md&apos; to &apos;001&apos;" description="Move 6 resources to &apos;001&apos;" destination="001" element1="public" element2="src" element3="package.json" element4="package-lock.json" element5="READFIRST.md" element6="README.md" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="6" stamp="1616392660061" updateReferences="true"/>
+</session>
