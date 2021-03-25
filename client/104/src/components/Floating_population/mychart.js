@@ -28,11 +28,11 @@ class floatingPopulationComposedChart extends Component {
     render () {
         return (
             <ComposedChart
-              width={1000}
+              width={1600}
               height={300}
               data={this.state.append_FPList}
               margin={{
-                top: 5, right: 50, left: 20, bottom: 5,
+                top: 5, right: 50, left: 300, bottom: 5,
               }}
             >
               <CartesianGrid stroke="#003458" />

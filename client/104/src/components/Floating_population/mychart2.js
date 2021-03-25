@@ -25,10 +25,10 @@ class floatingPopulationScatterChart extends Component {
     render() {
         return (
             <ScatterChart
-                width={1000}
+                width={1600}
                 height={300}
                 margin={{
-                    top: 5, right: 50, left: 20, bottom: 5,
+                   top: 5, right: 50, left: 300, bottom: 5,
                 }}
             >
                 <CartesianGrid />
