@@ -5689,3 +5689,73 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SESSION 2021-03-26 08:48:33.417 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_281
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2021-03-26 08:49:24.948
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2021-03-26 08:49:30.601
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-26 08:49:30.601
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ff233f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1b2213b2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-26 08:49:40.883
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\IT학교'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.code 1 0 2021-03-26 08:49:44.390
+!MESSAGE [CodeMix] Detected minor change in system fingerprint, impacted [un]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2021-03-26 08:49:58.462
+!MESSAGE Verifying CodeMix Engine runtime integrity...
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2021-03-26 08:49:58.478
+!MESSAGE IntegrityCheck: Artifacts located at: [C:\programs\eclipse\artifacts.xml]
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2021-03-26 08:49:58.525
+!MESSAGE Integrity check PASSED
+
+!ENTRY com.genuitec.eclipse.code.core 4 0 2021-03-26 08:49:58.697
+!MESSAGE Unable to parse processes from [C:\Users\IT학교\AppData\Local\Microsoft\OneDrive\OneDrive.exe                                              11776            1324       ]
+!STACK 0
+java.lang.NumberFormatException: For input string: "776            13"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findProcesses(EmbeddedEngine.java:272)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.findOrphanedEngines(EmbeddedEngine.java:216)
+	at com.genuitec.eclipse.code.engine.EmbeddedEngine.run(EmbeddedEngine.java:65)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.run(EngineManager.java:231)
+	at com.genuitec.eclipse.code.core.engine.app.EngineManager.initialize(EngineManager.java:108)
+	at com.genuitec.eclipse.code.core.engine.EngineService.start(EngineService.java:193)
+	at com.genuitec.eclipse.code.ui.CodeService.start(CodeService.java:373)
+	at com.genuitec.eclipse.code.ui.EngineStartupHandler$1.run(EngineStartupHandler.java:124)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2021-03-26 08:49:59.181
+!MESSAGE CodeMix Engine engine has been started
